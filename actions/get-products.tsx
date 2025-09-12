@@ -21,7 +21,7 @@ const getProducts = async (query: Query): Promise<Product[]> => {
         }
     })
 
-    const res = await fetch(URL, {
+    const res = await fetch(url, {
         next: { 
             revalidate: 0 // Revalidează la 0 minute
             
