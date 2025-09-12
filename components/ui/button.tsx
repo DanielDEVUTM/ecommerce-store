@@ -1,3 +1,4 @@
+"use client";
 import { forwardRef } from "react";
 import { cn } from "@/lib/utils";
 
@@ -16,9 +17,9 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
                        disabled: cursor-not-allowed disabled:opacity-50 text-white 
                        font-semibold hover:opacity-75 transition`, className)}
         ref={ref}
+        {...props}
         >
             {children}
-
         </button>
 
     )
