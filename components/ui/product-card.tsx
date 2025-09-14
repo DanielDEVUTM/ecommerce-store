@@ -3,7 +3,7 @@ import {Product} from "@/types";
 import Image from "next/image";
 import IconButton from "@/components/ui/icon-button";
 import { Expand, ShoppingCart } from "lucide-react";
-import Currnecy from "@/components/ui/currency";
+import Currency from "@/components/ui/currency";
 import { useRouter } from "next/navigation";
 import { MouseEventHandler } from "react";
 import  usePreviewModal from "@/hooks/use-preview-modals";
@@ -71,7 +71,7 @@ const ProductCard: React.FC<ProductCard>= ({data}) => {
         </div>
         {/* Price */}
         <div className="flex items-center justify-between">
-          <Currnecy value={data?.price}/>
+          <Currency value={data?.price}/>
 
         </div>
     </div>
